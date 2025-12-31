@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카페베네</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style1.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="main1">
+    <div class="swiper section1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="main1-img1" style="width: 100%; display: inline-block;"><img class="img1"
+              src="images/main1-banner1.jpg" alt="딸기배너" width="100%" height="750px">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="main1-img2" style="width: 100%; display: inline-block;">
+            <img src="images/main1-banner2.jpg" alt="초코배너" width="100%" height="750px">
+          </div>
+        </div>
+      </div>
+      <div class="sw-next">
+        <img src="images/nextbtn.png" alt="btn" width="50px">
+      </div>
+      <div class="sw-prev">
+        <img src="images/prevbtn.svg" alt="prevbtn" width="50px">
+      </div>
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+     <div class="mouse"></div>
+  </div>
+  <div class="main5">
+    <p class="main5-title">
+      매장 위치를 검색해보세요</p>
+    <form action="#" method="post">
+      <input placeholder="내 주변 매장 찾기" type="search" id="search" name="search" class="search">
+    </form>
+    <div class="main5-img-wrap">
+      <div class="main5-1img">
+        <img src="images/daejeon.jpg" alt="대전점" width="500px" class="main5-img">
+        <div class="main5-box">
+          <p class="main5-box-title">대전태평점</p>
+          <p class="main5-box-sub">대전 중구 계백로 1565번길 20</p>
+        </div>
+      </div>
+      <div class="main5-1img">
+        <img src="images/dongdaegu.jpg" alt="동대구점" width="500px" class="main5-img">
+        <div class="main5-box">
+          <p class="main5-box-title">동대구역사점</p>
+          <p class="main5-box-sub">대구 동구 동대구로 550 3층 맞이방</p>
+        </div>
+      </div>
+      <div class="main5-1img">
+        <img src="images/nonhyeon.jpg" alt="논현점" width="500px" class="main5-img">
+        <div class="main5-box">
+          <p class="main5-box-title">논현역점</p>
+          <p class="main5-box-sub">서울 강남구 강남대로 556 논현빌딩 1층</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    var swiper = new Swiper(".section1", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".sw-next",
+        prevEl: ".sw-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+      loop: true,
+      autoplay: true,
+      speed: 300,
+    });
+
+  </script>
+</body>
+
+</html>

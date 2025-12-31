@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main3-banner.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="swiper section4-1">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/event-banner1.png" alt=""></div>
+      <div class="swiper-slide">
+        <img src="images/event-banner2.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/event-banner3.png" alt="">
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <script>
+    var swiper = new Swiper(".section4-1", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay : true, 
+      loop : true,
+    });
+  </script>
+</body>
+</html>

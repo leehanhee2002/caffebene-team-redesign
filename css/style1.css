@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Gyeombalbal';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/insungitCutelivelyjisu.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+.main1 {
+    margin-top: 250px;
+    position: relative;
+}
+
+.main1 .section1 {
+    height: 550px;
+}
+
+
+.section1 .swiper-pagination {
+    position: absolute;
+}
+
+.section1 .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 60px;
+}
+
+.section1 .swiper-pagination-bullet-active {
+    width: 30px;
+    height: 10px;
+    border-radius: 60px;
+    background-color: #fff;
+}
+
+/* .section1 .swiper-slide .main-img1 {
+    width: 300px;
+    display: inline;
+} */
+
+
+/* .sw-next {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 0 14px;
+    padding-top: 14px;
+    background-color: #ffffff1a;
+    top: 50%;
+    right: 90px;
+    transform: translateY(-50%);
+    z-index: 9;
+    }
+
+.sw-prev {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 0 14px;
+    padding-top: 14px;
+    background-color: #ffffff1a;
+    top: 50%;
+    left: 90px;
+    transform: translateY(-50%);
+    z-index: 9;
+    } */
+.mouse {
+    width: 70px;
+    height: 120px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 9;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: mouse 1s infinite alternate;
+}
+
+.mouse img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.mouse::after {
+    content: 'SCROLL';
+    position: relative;
+    bottom: 20px;
+    right: -10px;
+    font-weight: 500;
+    font-family: 'Gyeombalbal';
+}
+
+@keyframes mouse {
+    0% {
+        bottom: -120px;
+    }
+
+    100% {
+        bottom: -140px;
+    }
+}
+
+.main5 {
+    margin: 50px 0 60px 0;
+    background-color: #edf5f4;
+    padding: 50px 0 100px 0;
+}
+
+.main5-title {
+    font-family: 'Gyeombalbal';
+    font-size: 2rem;
+    padding: 50px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main5-1img1,
+.main5-1img2,
+.main5-1img3 {
+    display: inline-block;
+}
+
+.main5-img-wrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.main5 .search {
+    width: 500px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: #fff;
+    margin: 20px 0 80px 0;
+    outline: none;
+    padding-left: 50px;
+}
+
+.main5 .search::placeholder {
+    font-size: 1.2rem;
+    color: #bbb;
+    font-family: 'Gyeombalbal';
+}
+
+.search:hover {
+    outline: 3px solid #00A5B1;
+}
+
+.search-icon {
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+.main5 .main5-img {
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.main5-img-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.main5-1img {
+    position: relative;
+    overflow: hidden;
+}
+
+.main5-box {
+    position: absolute;
+    top: 510px;
+    left: 0;
+    width: 500px;
+    height: 150px;
+    background-color: #534c4c90;
+    border-radius: 0 0 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all .5s;
+}
+
+.main5-img {
+    border-radius: 50px;
+}
+
+.main5-box-title,
+.main5-box-sub {
+    color: #fff;
+
+}
+
+.main5-box-title {
+    font-size: 1.7rem;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-family: 'Gyeombalbal';
+}
+
+.main5-box-sub {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Gyeombalbal';
+}
+
+.main5-1img:hover .main5-box {
+    top: 350px;
+
+}

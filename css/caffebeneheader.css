@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Gyeombalbal';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/insungitCutelivelyjisu.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+}
+
+header .logo-center {
+    width: 200px;
+}
+
+header .logo-right {
+    width: 70px;
+}
+
+/* 전체 ul 스타일 */
+header ul {
+    list-style: none;
+    text-align: center;
+    font-family: 'Gyeombalbal';
+
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+header nav {
+    padding-top: 30px;
+    padding-bottom: 30px ;
+}
+
+/* 네비게이션 메뉴 설정 */
+header nav > ul {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header nav > ul > li {
+    width: 240px;
+    position: relative;
+    font-weight: 700;
+    
+}
+
+.headermenu {
+    text-decoration: none;
+}
+
+header > nav > ul > li > a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    
+}
+
+header > nav > ul > li > a:hover {
+    color: #3dc7be; /* 민트색 (필요시 색상 조정 가능) */
+    text-decoration: underline; /* 밑줄 효과 */
+    text-underline-offset: 3px; /* 밑줄과 텍스트 간격 */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* 드롭다운 메뉴 스타일 */
+header > nav > ul ul {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    transition: opacity 0.3s ease-out, visibility 0.3s;
+}
+
+header > nav > ul > li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+header > nav > ul ul {
+    border-radius: 10px;    
+    background-color: white;
+}
+
+header > nav > ul ul li a {
+    display: block;
+    padding: 10px;
+    line-height: 35px;
+    font-size: 16px;
+    font-family: 'Gyeombalbal';
+    font-weight: 500;
+}
+
+header > nav > ul ul li a:hover {
+    color: #00A5B1;
+}
+
+/* 헤더에서 이미지 배치 스타일 */
+header {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding-top: 30px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 123px; /* 헤더 높이 설정 */
+}
+
+/* 첫 번째 이미지 중앙 배치 */
+.logo-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 두 번째 이미지 오른쪽 끝 배치 */
+.logo-right {
+    position: absolute;
+    right: 50px; /* 오른쪽 끝에 배치 */
+    top: 50%; /* 상단 50% 위치 */
+    transform: translateY(-50%); /* 세로 중앙 정렬 */
+    max-height: 80%; /* 이미지 크기 조정: 80%로 줄여서 잘림 방지 */
+    border-radius: 10px;
+}
